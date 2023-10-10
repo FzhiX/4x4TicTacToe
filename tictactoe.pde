@@ -4,10 +4,11 @@ boolean playerTurn = true; // True for player, false for AI
 void setup()
 {
   size(600,600);
-  background(255);
+  background(238);
   
   // Grid
   stroke(0);
+  strokeWeight(5);
   for (int i = 1; i < 4; i++)
   {
     line((width/4)*i, 0, ((width/4)*i), height);
@@ -26,7 +27,13 @@ void setup()
 
 void draw() 
 {
-  
+  textAlign(CENTER);
+  for (int y = 0; y < 4; y++)
+  {
+    for (int x = 0; x < 4; x++)
+    {
+      text(board[x][y], );
+    }
   
 }
 
